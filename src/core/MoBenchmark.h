@@ -34,7 +34,6 @@ class Job;
 class MoBenchmark : public IJobResultListener {
 
         enum BenchAlgo : int {
-            GHOSTRIDER_RTM, // "ghostrider"       GhostRider
             CN_R,           // "cn/r"             CryptoNightR (Monero's variant 4).
             CN_LITE_1,      // "cn-lite/1"        CryptoNight-Lite variant 1.
             CN_HEAVY_XHV,   // "cn-heavy/xhv"     CryptoNight-Heavy (modified, Haven Protocol only).
