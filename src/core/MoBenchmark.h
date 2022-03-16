@@ -53,7 +53,6 @@ class MoBenchmark : public IJobResultListener {
         };
 
         const Algorithm::Id ba2a[BenchAlgo::MAX] = {
-            Algorithm::GHOSTRIDER_RTM,
             Algorithm::CN_R,
             Algorithm::CN_LITE_1,
             Algorithm::CN_HEAVY_XHV,
