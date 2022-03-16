@@ -139,7 +139,6 @@ double MoBenchmark::get_algo_perf(Algorithm::Id algo) const {
         case Algorithm::RX_GRAFT:       return m_bench_algo_perf[BenchAlgo::RX_GRAFT];
         case Algorithm::RX_ARQ:         return m_bench_algo_perf[BenchAlgo::RX_ARQ];
         case Algorithm::RX_XLA:         return m_bench_algo_perf[BenchAlgo::RX_XLA];
-        case Algorithm::GHOSTRIDER_RTM: return m_bench_algo_perf[BenchAlgo::GHOSTRIDER_RTM];
         default: return 0.0f;
     }
 }
@@ -163,11 +162,6 @@ void MoBenchmark::start(const BenchAlgo bench_algo) {
           job.setBlob("4c38e8a5f7b2944d1e4274635d828519b97bc64a1f1c7896ecdbb139988aa0e80000000000000000000000000000000000000000000000000000000000000000000000000000000000000000");
           job.setDiff(Job::toDiff(strtoull("000000639c000000", nullptr, 16)));
           job.setHeight(1500000);
-          break;
-
-      case BenchAlgo::GHOSTRIDER_RTM:
-          job.setBlob("000000208c246d0b90c3b389c4086e8b672ee040d64db5b9648527133e217fbfa48da64c0f3c0a0b0e8350800568b40fbb323ac3ccdf2965de51b9aaeb939b4f11ff81c49b74a16156ff251c00000000");
-          job.setDiff(1000);
           break;
 
       default:
